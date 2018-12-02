@@ -1,18 +1,7 @@
 defmodule Aoc2018 do
-  @moduledoc """
-  Documentation for Aoc2018.
-  """
+  def file_to_list(filename) do
+    {:ok, data} = File.read(filename)
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Aoc2018.hello()
-      :world
-
-  """
-  def hello do
-    :world
+    String.split(data, "\n")
   end
 end
